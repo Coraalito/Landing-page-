@@ -36,7 +36,12 @@
 
         // agregar items al carrito
         itemsButton.addEventListener('click', () => {
-            itemCart.textContent = count;
+          
+            if (count == 0) {   
+                itemCart.textContent = '';
+            }else{
+                itemCart.textContent = count;
+            }
             updateModal();
         });
 
