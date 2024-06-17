@@ -27,14 +27,11 @@
         <div class="flex items-center space-x-5 sm:space-x-12 order-3 px-5 ">
             <!-- Cart Icon -->
             <div>
-                <button id="cartButton" class="relative">
+                <button id="openmodal" class="relative">
                     <img src="{{ asset('icons/icon-cart.svg') }}" alt="Carrito de compras de sneakers" class="h-6 mt-2" loading="lazy" >
-                    <span class="absolute top-0 left-4 bg-orange-500 text-white text-xs rounded-full px-2">2</span>
-                    <!-- Modal -->
-                    <div id="cartModal" class="hidden absolute right-0 mt-2 w-64 bg-white text-black p-4 shadow-lg z-50 rounded-lg">
-                        <h2 class="text-lg font-bold mb-4">Cart</h2>
-                        <p>Your cart is empty.</p>
-                    </div>
+                    <span id ="items" class="absolute top-0 left-4 bg-orange-500 text-white text-xs rounded-full px-2"></span>
+                   <!-- Modal -->
+                   @include('components.modal')
                 </button>
             </div>
 
@@ -45,7 +42,6 @@
         </div>
     </nav>
 
-
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="hidden md:hidden bg-white text-black font-extrabold">
         <a href="#" class="block px-5 py-2 hover:bg-gray-100">Collections</a>
@@ -54,5 +50,6 @@
         <a href="#" class="block px-5 py-2 hover:bg-gray-100">About</a>
         <a href="#" class="block px-5 py-2 hover:bg-gray-100">Contact</a>
     </div>
+    
 </header>
 
