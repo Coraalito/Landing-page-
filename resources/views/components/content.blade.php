@@ -25,13 +25,13 @@
             <div class="md:flex items-center md:space-x-6 mt-5 ">
                 <div class="bg-slate-50 rounded-md  flex items-center space-x-6 font-bold text-2xl justify-between  my-2 ">
                     <!-- Botón de menos -->
-                    <button id="decrement" class=" text-amber-600 px-3 py-1">
+                    <button id="decrement" class=" text-amber-600 px-3 py-1 hover:text-amber-800">
                         -
                     </button>
                     <!-- Contador -->
                     <span id="counter" class="text-md">0</span>
                     <!-- Botón de más -->
-                    <button id="increment" class=" text-amber-600 px-3 py-1">
+                    <button id="increment" class=" text-amber-600 px-3 py-1 hover:text-amber-800">
                         +
                     </button>
                 </div>      
