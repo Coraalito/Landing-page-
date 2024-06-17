@@ -1,20 +1,37 @@
-<!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
+
+
+<div class="swiper mySwiper2" >
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="{{asset('images/image-product-1.jpg')}}" alt="Limited edition sneakers 1" class="md:rounded-xl w-full h-1/2" lazy="true">
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+    <div class="swiper-slide">
+      <img src="{{asset('images/image-product-2.jpg')}}" alt="Limited edition sneakers 1" class="md:rounded-xl w-full h-1/2" lazy="true">
+    </div>
+    <div class="swiper-slide">
+      <img src="{{asset('images/image-product-3.jpg')}}" alt="Limited edition sneakers 1" class="md:rounded-xl w-full h-1/2" lazy="true">
+    </div>
+    <div class="swiper-slide">
+      <img src="{{asset('images/image-product-4.jpg')}}" alt="Limited edition sneakers 1" class="md:rounded-xl w-full h-1/2" lazy="true">
+    </div>
+  </div>
+
+</div>
+
+
+<div thumbsSlider="" class="swiper mySwiper hidden md:block">
+  <div class="swiper-wrapper ">
+    <div class="swiper-slide">
+      <img src="{{asset('images/image-product-1-thumbnail.jpg')}}" alt="" class="rounded-xl my-6  hidden md:block" lazy="true">
+    </div>
+    <div class="swiper-slide">
+      <img src="{{asset('images/image-product-2-thumbnail.jpg')}}" alt="" class="rounded-xl my-6  hidden md:block" lazy="true">
+    </div>
+    <div class="swiper-slide">
+      <img src="{{asset('images/image-product-3-thumbnail.jpg')}}" alt="" class="rounded-xl my-6  hidden md:block" lazy="true">
+    </div>
+    <div class="swiper-slide">
+      <img src="{{asset('images/image-product-4-thumbnail.jpg')}}" alt="" class="rounded-xl my-6  hidden md:block" lazy="true">
+    </div>
+  </div>
 </div>

@@ -38,7 +38,6 @@
         itemsButton.addEventListener('click', () => {
             itemCart.textContent = count;
             updateModal();
-
         });
 
         // abrir modal y cerrar modal

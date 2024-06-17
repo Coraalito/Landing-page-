@@ -1,8 +1,8 @@
-<div class="flex items-center justify-center ">
+<div class="flex items-center justify-center md:mt-10">
     <div class="flex flex-col md:flex-row items-center bg-white overflow-hidden max-w-6xl ">
         <!-- Sección de swiper -->
-        <div class="w-full md:w-1/2 md:p-20">
-            <img src="{{asset('images/image-product-1.jpg')}}" alt="Imagen" class="w-full h-full object-cover md:rounded-2xl">
+        <div class="w-full md:w-1/2  md:p-10 ">
+            @include('components.swiper')
         </div>
         <!-- Sección de Contenido -->
         <div class="w-full md:w-1/2 p-12">
@@ -22,7 +22,7 @@
                 </div>
             </div>
           
-            <div class="md:flex items-center md:space-x-6 mt-5 ">
+            <div class="xl:flex items-center md:space-x-6 mt-5 ">
                 <div class="bg-slate-50 rounded-md  flex items-center space-x-6 font-bold text-2xl justify-between  my-2 ">
                     <!-- Botón de menos -->
                     <button id="decrement" class=" text-amber-600 px-3 py-1 hover:text-amber-800">

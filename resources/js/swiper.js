@@ -3,30 +3,31 @@
     import 'swiper/css/bundle';
     
     // Configuracion de Swiper
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 10,
-        speed: 800,
-        spaceBetween: 100,
+    const swiper = new Swiper('.mySwiper', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+     
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-
       });
+
+    const swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+    // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+
+      
