@@ -22,3 +22,8 @@ body {
 .hover-underline:hover::after {
     transform: scaleX(1);
 }
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
