@@ -1,10 +1,8 @@
-//*.................. Swiper slider carousel ..................*//
     // import Swiper JS
     import Swiper from 'swiper/bundle';
     import 'swiper/css/bundle';
     
-    
-    // Ejemplo de inicialización de Swiper
+    // Configuracion de Swiper
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',

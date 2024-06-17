@@ -1,16 +1,13 @@
 <header class="bg-white text-gray-600">
-    <nav class="container mx-auto flex justify-between items-center p-5 md:p-0 border-b-2 border-gray-200">
-
-        
+    <nav class="container mx-auto flex justify-between items-center p-5 md:p-0 border-b-2 border-gray-200 ">
         <div class="flex flex-row md:space-x-16 space-x-3 items-center ">
           <!-- Mobile Menu Button -->
              <div class="md:hidden  order-1 m-2 ">
                 <button id="menuButton">
-                    <img src="{{ asset('icons/icon-menu.svg') }}" alt="Boton responsivo" class="px-2" loading="lazy" >
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>               
                 </button>
             </div>
       
-
             <!-- Logo -->
             <div class="order-2 md:order-1 ">
                 <img src="{{ asset('logo.svg') }}" alt="Logo" loading="lazy"  > 
@@ -26,7 +23,6 @@
             </div>
         </div>
 
-       
         <!-- Icons -->
         <div class="flex items-center space-x-5 sm:space-x-12 order-3 px-5 ">
             <!-- Cart Icon -->
